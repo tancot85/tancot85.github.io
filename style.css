@@ -6,7 +6,7 @@
     --secondaryText: #4b5156;
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
-    --themeDotBorder:black;
+    --themeDotBorder: black;
 }
 
 html, body {
@@ -14,7 +14,7 @@ html, body {
     margin: 0;
 }
 
-body *{
+body * {
     transition: 0.3s;
 }
 
@@ -141,14 +141,12 @@ ul {
     border-radius: 5px 5px 0 0;
 }
 
-
-
 #navigation {
     margin: 0;
     padding: 10px;
 }
 
-#navigation a{
+#navigation a {
     color: var(--mainText);
 }
 
@@ -192,8 +190,9 @@ ul {
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
-.theme-dots:hover{
-	border-width: 5px;
+
+.theme-dots:hover {
+    border-width: 5px;
 }
 
 #light-mode {
@@ -282,87 +281,123 @@ ul {
 
 /* about me section */
 
-.about-wrapper{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-top: 50px;
     padding-bottom: 50px;
-    gap:100px;
+    gap: 100px;
 }
 
-.skills-div{
-    
+.skills-div {
     align-items: center;
-    
 }
 
-.skills{
-    display:flex;
+.skills {
+    display: flex;
     justify-content: space-evenly;
     background-color: var(--previewShadow);
     width: 400px
 }
 
-.skills-div a{
+.skills-div a {
     padding-left: 20%;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
-.download-resume{
-    padding: 20px;  
+.download-resume {
+    margin: 45px;
+    border: 1px solid #17a2b8;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
 }
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-info {
+    /* align-items: center; */
+    max-width: 80px;
+}
+
+.contact-info img {
+    padding-left: 15px;
+    width: 80%;
+}
+
+.contact-info div {
+    margin-top: 16px;
+    padding-left: 10px;
+}
+
+.contact-info a {
+    /* padding-top: 100px; */
+    font-size: 16px;
+    font-family: 'Roboto Mono';
+    color: var(--secondaryText);
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill-element {
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+
 
 /* .skills-list{
     min-width: 100px;
 } */
 
-
 /* end of abourt me section */
-
 
 /* project section */
 
-.post-wrapper{
+.post-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit,320px);
-    gap:20px;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
     justify-content: center;
     padding-bottom: 15px;
-
 }
 
-.post{
+.post {
     border: 1px solid var(--borderColor);
-    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
-.thumbnail{
+.thumbnail {
     width: 100%;
-    height:180px;
+    height: 180px;
     display: block;
     object-fit: cover;
 }
 
-.post-preview{
+.post-preview {
     background-color: #fff;
     padding: 15px;
 }
 
-.post-title{
-    margin:0;
+.post-title {
+    margin: 0;
     color: black;
 }
 
-.post-intro{
+.post-intro {
     color: #4b5156;
-    font-size:14px;
+    font-size: 14px;
 }
 
 /* end of project section */
-
 
 @media screen and (max-width: 1200px) {
     .main-container {
@@ -373,29 +408,31 @@ ul {
 
 @media screen and (max-width: 800px) {
     .intro-wrapper {
-        
         grid-template-columns: 1fr;
         /* grid-template-rows: 3em 30em; */
         grid-template-areas: 'nav-wrapper ' 'left-column' 'right-column';
     }
-
-    .right-column{
+    .right-column {
         justify-content: center;
         /* margin-bottom: 2em; */
     }
 }
 
-@media screen and (max-width: 400px){
-	#preview-shadow{
-		max-width: 280px;
-		height: 180px;
-		padding-left: 10px;
-		padding-top: 10px;
-	}
+@media screen and (max-width: 400px) {
+    #preview-shadow {
+        max-width: 280px;
+        height: 180px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    #preview {
+        width: 280px;
+    }
 
-	#preview{
-		width: 280px;
-
-	}
-
+    .skill-element{
+        font-size: 1.2rem;
+    }
+    .skills{
+        width: 350px;
+    }
 }
