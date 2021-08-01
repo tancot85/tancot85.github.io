@@ -269,10 +269,82 @@ ul {
 /* about me section */
 
 .about-wrapper{
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap:100px;
 }
 
+.skills-div{
+    
+    align-items: center;
+    
+}
+
+.skills{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+    width: 400px
+}
+
+.skills-div a{
+    padding-left: 20%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .skills-list{
+    min-width: 100px;
+} */
+
+
 /* end of abourt me section */
+
+
+/* project section */
+
+.post-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,320px);
+    gap:20px;
+    justify-content: center;
+    padding-bottom: 15px;
+
+}
+
+.post{
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.thumbnail{
+    width: 100%;
+    height:180px;
+    display: block;
+    object-fit: cover;
+}
+
+.post-preview{
+    background-color: #fff;
+    padding: 15px;
+}
+
+.post-title{
+    margin:0;
+    color: black;
+}
+
+.post-intro{
+    color: #4b5156;
+    font-size:14px;
+}
+
+/* end of project section */
+
 
 @media screen and (max-width: 1200px) {
     .main-container {
