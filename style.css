@@ -6,12 +6,16 @@
     --secondaryText: #4b5156;
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
-    --themeDotBorder:#FFF
+    --themeDotBorder:black;
 }
 
 html, body {
     padding: 0;
     margin: 0;
+}
+
+body *{
+    transition: 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -22,7 +26,7 @@ h1, h2, h3, h4, h5, h6, strong {
 
 p, li, span, label, input, textarea {
     color: var(--secondaryText);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 h1 {
@@ -137,9 +141,15 @@ ul {
     border-radius: 5px 5px 0 0;
 }
 
+
+
 #navigation {
     margin: 0;
     padding: 10px;
+}
+
+#navigation a{
+    color: var(--mainText);
 }
 
 #navigation li {
@@ -181,6 +191,9 @@ ul {
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+.theme-dots:hover{
+	border-width: 5px;
 }
 
 #light-mode {
@@ -370,4 +383,19 @@ ul {
         justify-content: center;
         /* margin-bottom: 2em; */
     }
+}
+
+@media screen and (max-width: 400px){
+	#preview-shadow{
+		max-width: 280px;
+		height: 180px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	#preview{
+		width: 280px;
+
+	}
+
 }

@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
-    <link id="theme-style" rel="stylesheet" href="blue.css">
+    <link id="theme-style" rel="stylesheet" href="">
     <title>Portfolio</title>
 </head>
 
@@ -35,7 +37,7 @@
                     </div>
 
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html#about-me">Contact</a></li>
                         <!-- <li><a href="#">contact</a></li> -->
                     </ul>
 
@@ -46,10 +48,10 @@
                     <img id="profile-pic" src="./images/tanmay.jpg" alt="">
                     <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div class="theme-dots" id="light-mode"></div>
-                        <div class="theme-dots" id="blue-mode"></div>
-                        <div class="theme-dots" id="green-mode"></div>
-                        <div class="theme-dots" id="purple-mode"></div>
+                        <div data-mode = "light" class="theme-dots" id="light-mode"></div>
+                        <div data-mode = "blue" class="theme-dots" id="blue-mode"></div>
+                        <div data-mode = "green" class="theme-dots" id="green-mode"></div>
+                        <div data-mode = "purple" class="theme-dots" id="purple-mode"></div>
                     </div>
                     <p id="settings-note">*Theme options will be saved for<br> your next visit</p>
                 </div>
@@ -117,9 +119,9 @@
     </section>
 
 
-    <section class="s2">
+    <section class="s1">
         <div class="main-container">
-            <div class="about-wrapper">
+            <div class="about-wrapper" id = "about-me">
                 <div class="about-me">
                     <h4>More About Me</h4>
                     <p>
@@ -163,6 +165,8 @@
     </section>
 
 
+<script src="script.js"></script>
+    
 </body>
 
 </html>
