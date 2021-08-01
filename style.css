@@ -6,6 +6,7 @@
     --secondaryText: #4b5156;
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
+    --themeDotBorder:#FFF
 }
 
 html, body {
@@ -173,7 +174,7 @@ ul {
     background-color: black;
     height: 30px;
     width: 30px;
-    border: 3px solid black;
+    border: 3px solid var(--themeDotBorder);
     border-radius: 50%;
     margin: 7px;
     cursor: pointer;
@@ -293,6 +294,10 @@ ul {
     padding-left: 20%;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+}
+
+.download-resume{
+    padding: 20px;  
 }
 
 /* .skills-list{
