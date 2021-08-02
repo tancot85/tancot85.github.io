@@ -3,7 +3,7 @@ console.log("hello there")
 let theme = localStorage.getItem('theme')
 
 if(theme == null){
-    setTheme('light')
+    setTheme('blue')
 }
 else{
     setTheme(theme)
@@ -21,16 +21,16 @@ for(var i=0; i<themeDots.length;i++){
 
 function setTheme(mode){
     if(mode == 'light'){
-        document.getElementById('theme-style').href = 'style.css'
+        document.getElementById('theme-style').href = './styles/style.css'
     }
     if(mode == 'blue'){
-        document.getElementById('theme-style').href = 'blue.css'
+        document.getElementById('theme-style').href = './styles/blue.css'
     }
     if(mode == 'green'){
-        document.getElementById('theme-style').href = 'green.css'
+        document.getElementById('theme-style').href = './styles/green.css'
     }
     if(mode == 'purple'){
-        document.getElementById('theme-style').href = 'purple.css'
+        document.getElementById('theme-style').href = './styles/purple.css'
     }
 }
 

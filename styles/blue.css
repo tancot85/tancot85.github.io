@@ -15,5 +15,16 @@
 
 	--buttonColor:#17a2b8;
 
+	--downladText:#004ba0;
+    --downloadBack:white;
+}
 
+.download-resume{
+	color: white;
+	border-color: white;
+}
+
+.download-resume:hover{
+	background-color: var(--downladText);
+	border-color: transparent;
 }

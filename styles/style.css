@@ -7,6 +7,8 @@
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
     --themeDotBorder: black;
+    --downladText: black;
+    --downloadBack: white;
 }
 
 html, body {
@@ -91,9 +93,14 @@ ul {
 .intro-wrapper {
     background-color: var(--secondaryColor);
     border-radius: 5px 5px 0 0;
-    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    margin-bottom: 15px;
+    border: 1px solid var(--borderColor);
+    /* -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75); */
+    box-shadow: 9px 9px 8px 0px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: 9px 9px 8px 0px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 9px 9px 8px 0px rgba(0, 0, 0, 0.53);
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 3em 30em; */
@@ -307,11 +314,18 @@ ul {
 }
 
 .download-resume {
+    text-align: center;
     margin: 45px;
-    border: 1px solid #17a2b8;
+    border: 2px solid var(--downladText);
+    color: var(--downladText);
     width: 250px;
     padding: 20px;
     border-radius: 10px;
+}
+
+.download-resume:hover {
+    background-color: var(--downladText);
+    color: var(--downloadBack);
 }
 
 .contact-wrapper {
@@ -351,7 +365,6 @@ ul {
     font-size: 1.5rem;
 }
 
-
 /* .skills-list{
     min-width: 100px;
 } */
@@ -375,7 +388,6 @@ ul {
     box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
-
 .thumbnail {
     width: 100%;
     height: 180px;
@@ -392,7 +404,7 @@ ul {
     margin: 0;
 }
 
-.post-title a{
+.post-title a {
     color: var(--mainText);
 }
 
@@ -432,11 +444,10 @@ ul {
     #preview {
         width: 280px;
     }
-
-    .skill-element{
+    .skill-element {
         font-size: 1.2rem;
     }
-    .skills{
+    .skills {
         width: 350px;
     }
 }

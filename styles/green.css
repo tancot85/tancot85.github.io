@@ -14,6 +14,11 @@
 
 
 	--buttonColor:#669966;
-
+	--downladText:#827717;
+    --downloadBack:white;
 
 }
+	.download-resume{
+		background-color: #9e9d24;
+		color: var(--secondaryColor);
+	}
