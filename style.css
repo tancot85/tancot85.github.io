@@ -375,6 +375,7 @@ ul {
     box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 
+
 .thumbnail {
     width: 100%;
     height: 180px;
@@ -383,17 +384,20 @@ ul {
 }
 
 .post-preview {
-    background-color: #fff;
+    background-color: var(--secondaryColor);
     padding: 15px;
 }
 
 .post-title {
     margin: 0;
-    color: black;
+}
+
+.post-title a{
+    color: var(--mainText);
 }
 
 .post-intro {
-    color: #4b5156;
+    color: var(--secondaryText);
     font-size: 14px;
 }
 
